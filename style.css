@@ -1,0 +1,335 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Bree Serif', serif;
+}
+body{
+   overflow-x: hidden;
+}
+html{
+   scroll-behavior: smooth;
+}
+.section-one{
+   height: 100vh;
+   width: 100vw;
+   background-color: black;
+}
+.navbar-container{
+   display: flex;
+   background-color: black;
+   padding: 50px;
+}
+.navbar-container h3{
+   color: white;
+}
+.navbar-container .navbar{
+   flex: 1;
+}
+.navbar-container .navbar .navbar-list-items{
+   list-style-type: none;
+   text-align: right;
+}
+.navbar-container .navbar .navbar-list-items li {
+   display: inline;
+}
+.navbar-container .navbar .navbar-list-items li a{
+   text-decoration: none;
+   margin: 10px;
+   color: rgb(6, 248, 26);
+}
+.section-one .menu-bar span{
+   width: 20px;
+   background-color: rgb(6, 248, 26);
+   display: block;
+   padding: 2px;
+   margin: 3px;
+}
+.section-one .menu-bar{
+   display: none;
+   position: absolute;
+   top: 0px;
+   left: 85%;
+   margin: 10px;
+}
+.brand-container .fa-apple{
+   font-size: 60px;
+   color: white;
+   padding-left: 50px;
+}
+.body-section{
+   display: flex;
+}
+
+.body-section .detail-section{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   flex: 1;
+   padding: 250px 0 0 80px;
+   width: 200px;
+}
+.body-section .detail-section h1{
+   font-size: 50px;
+}
+.body-section .detail-section h4{
+   font-size: 30px;
+}
+.body-section .detail-section h5{
+   font-size: 25px;
+}
+.body-section .detail-section button{
+   width: 100px;
+   border-radius: 10px;
+   padding: 10px;
+   outline: none;
+   border: none;
+   background-color: rgb(6, 248, 26);
+}
+.body-section .image-container {
+   flex: 1;
+   height: 600px;
+   padding-right: 100px;
+   width: 300px;
+}
+.features{
+   display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+.features div{
+   padding: 10px;
+   flex: 1 0 200px;
+   text-align: center;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+}
+
+.features div h3{
+   color: white;
+}
+.features div i{
+   font-size: 50px;
+   color: rgb(6, 248, 26);
+}
+.features div .feature{
+   color: black;
+   background-color: rgb(6, 248, 26);
+   background: linear-gradient(to bottom,rgb(6,248,26),rgb(34, 34, 33));
+   height: 20px;
+   padding: 25px;
+   border-radius: 10px;
+   text-align: left;
+}
+.chat-section{
+   display: flex;
+   width: 100vw;
+   height: 100vh;
+   background-color: black;
+   justify-content: center;
+   align-items: center;
+   padding: 30px;
+}
+.chat-section .mobile-lottie{
+   width: 300px;
+   border-right:2px solid grey;
+}
+
+.chat button{
+   width: 100px;
+   border-radius: 10px;
+   padding: 10px;
+   outline: none;
+   border: none;
+   background-color: rgb(6, 248, 26);
+}
+.chat-section .chat{
+   padding-left: 100px;
+   color: white;
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+}
+.video-section{
+   display: flex;
+   
+   width: 100vw;
+   height: 100vh;
+   background-color: black;
+   justify-content: center;
+   align-items: center;
+  padding: 100px;
+}
+.video-section .video-and-controls{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   height: 300px;
+   gap: 20px;
+   flex: 1;
+}
+.video-section h1{
+   flex: 1;
+   width: 300px;
+}
+.video-section .video-and-controls #video{
+   border-radius: 20px;
+   padding-right: 0px;
+}
+.video-section .video-and-controls .controls{
+   text-align: center;
+}
+.video-section .video-and-controls button{
+   width: 100px;
+   border-radius: 10px;
+   padding: 10px;
+   outline: none;
+   border: none;
+   background-color: rgb(6, 248, 26);
+   margin: 10px;
+   cursor: pointer;
+}
+.video-section .video-and-controls button:nth-child(1){
+  
+background-color: transparent;
+border: 2px solid rgb(6, 248, 26);
+color: white;
+cursor: pointer;
+
+}
+#footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 50 0 100 00px;
+   background-color: black;
+   color: white;
+   height: 130px;
+}
+#footer div:nth-child(2) p{
+   margin: 10px;
+}
+#footer div:nth-child(2){
+   text-align: center;
+}
+#footer i{
+   font-size: 20px;
+   margin: 10px;
+   color: rgb(6, 248, 26);
+}
+#footer p{
+   color: rgb(6, 248, 26);
+}
+@media screen and (max-width:900px) {
+   .video-section{
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      padding: 0px;
+   }
+   .video-section h1{
+      height: 100px;
+   }
+   .chat-section .mobile-lottie{
+      width: 250px;
+      border-right:2px solid grey;
+   }
+   .features{
+      height: auto;
+   }
+   .brand-container .fa-apple{
+      font-size: 40px;
+      color: white;
+      padding-left: 30px;
+   }
+   .image-container {
+      flex: 1;
+      height: 500px;
+      padding-right: 100px;
+   }
+   .body-section .detail-section h1{
+      font-size: 40px;
+   }
+   .body-section .detail-section h4{
+      font-size: 20px;
+   }
+   .body-section .detail-section h5{
+      font-size: 15px;
+   }
+}
+@media screen and (max-width:520px) {
+   .chat-section .mobile-lottie{
+      width: 200px;
+      border-right:2px solid grey;
+   }
+   .chat-section .chat{
+      padding-left: 40px;
+   }
+   .features{
+      height: auto;
+   }
+   .section-one{
+      height: auto;
+   }
+   .body-section{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+   }
+   .body-section .image-container{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     padding-top: 100px;
+     padding-left: 50px;
+   }
+   .section-one .menu-bar{
+      display: block;
+   }
+   .navbar-container .brand-container{
+      flex:1;
+   }
+   .section-one .menu-bar {
+      text-align: right;
+      display: block;
+      margin-top: 50px;
+   }
+   .navbar-container{
+      display: flex;
+      flex-direction: column;
+   }
+   .navbar-container .navbar{
+      display: none;
+
+   }
+   .navbar-container .toggle-navbar{
+      display: block;
+   }
+   .navbar-container .navbar .navbar-list-items li {
+      display: block;
+      text-align: center;
+      margin: 20px;
+   }
+   .body-section .detail-section{
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+      padding: 250px 0 0 50px;
+   }
+   .brand-container .fa-apple{
+      font-size: 40px;
+      color: white;
+      padding: 0;
+      margin-left: 0px;
+   }
+}

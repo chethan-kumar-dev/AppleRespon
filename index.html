@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Staatliches&display=swap" rel="stylesheet">   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <title>Document</title>
+</head>
+<body>
+   <div class="section-one">
+      <div class="navbar-container">
+         <div class="brand-container">
+            <i class="fab fa-apple" ></i>
+         </div>
+         <nav class="navbar toggle-navbar" id='navbar' >
+            <ul class="navbar-list-items">
+               <li><a href="#home">Home</a></li>
+               <li><a href="#features">Features</a></li>
+               <li><a href="#chat">Chat</a></li>
+               <li><a href="#addvertise">Advertisement</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="menu-bar" id='menu-bar'>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+
+      <div class="body-section" id='home'>
+         <div class="detail-section">
+            <h1>IPhone</h1>
+            <h4>Never like before</h4>
+            <h5>Founder - Steve jobs</h5>
+            <button>Explore</button>
+         </div>
+         <div class="image-container">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_el5xa7ow.json"  background="transparent" class="po"  speed="1"  loop autoplay></lottie-player>
+         </div>
+      </div>
+   </div>
+   <div class="features" id='features'>
+      <div>
+         <h3>Battery Backup</h3>
+         <i class="fas fa-battery-three-quarters"></i>
+         <div class="feature">
+            Battery is up 100% asodbb asod aosdhiouas doiasdou;hbajs dicabsidubais dciuasbyulib
+            <br>
+            * 100% charge<br>
+            * Guaranteed 2years<br>
+            * No bulging
+         </div>
+      </div>
+      <div>
+         <h3>User Friendly</h3>
+         <i class="fas fa-user-friends"></i>
+         <div class="feature"> 
+           Very user friendly to use all the features that is provided by the Iphone brand
+           <br>
+           * User friendly<br>
+           * No confusions<br>
+           * Very well customized
+         </div>
+      </div>
+      <div>
+         <h3>Robust Apps</h3>
+         <i class="fab fa-app-store-ios"></i>
+         <div class="feature">
+            Apps are powerfull to use with greate Security
+            <br>
+            * 100% Security<br>
+            * No data shared<br>
+            * Data is more secured
+         </div>
+      </div>
+      <div>
+         <h3>Security</h3>
+         <i class="fas fa-shield-alt"></i>
+         <div class="feature">
+            Very user friendly to use all the features that is provided by the Iphone brand
+           <br>
+           * User friendly<br>
+           * No confusions<br>
+           * Very well customized
+         </div>
+      </div>
+   </div>
+   <div class="chat-section" id='chat'>
+      <div class="mobile-lottie">
+         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+         <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_zezv30bd.json"  background="transparent"  speed="1"   loop  autoplay></lottie-player>
+      </div>
+      <div>
+         <div class="chat">
+            <h1>Customer Support</h1>
+            <h4>Find the best services</h4>
+            <button>Chat With Us</button>
+         </div>
+      </div>
+   </div>
+   <div class="video-section" id='addvertise'>
+      <h1 class="para" style="color: rgb(6, 248, 26);"></h1>
+
+      <div class="video-and-controls">
+         <video src="apple.mp4" autoplay id='video' ></video>
+         <div class="controls">
+            <button onclick="startMusic()">Start</button>
+            <button onclick="stopMusic()">Stop</button>
+         </div>
+      </div>
+   </div>
+   <footer id="footer" >
+      <div>
+         <i class="fab fa-facebook-f"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="fab fa-twitter"></i>
+         <i class="fas fa-envelope-open"></i>
+      </div>
+     <div>
+        <p>@copyrights 2021 | Apple.Inc</p>
+        <p>CHETHAN KUMAR | FRONT END DEVELOPER</p>
+
+     </div>
+    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+      var anchors=document.getElementsByTagName('a');
+      for(var i=0;i<anchors.length;i++){
+         anchors[i].addEventListener('click', execute)
+      }
+     
+      var video=document.getElementById('video');
+      function startMusic(){
+         video.play();
+      }
+      function stopMusic(){
+         video.pause()
+      }
+      var navbar=document.getElementById('navbar');
+      var menu_bar=document.getElementById('menu-bar');
+      menu_bar.onclick=function(){ 
+            //navbar.classList.toggle('toggle-navbar')
+         navbar.style.display==='block'?navbar.style.display='none':navbar.style.display='block'
+      }
+      function execute(){
+         navbar.style.display='none'
+      }
+     
+         if(window.innerWidth>='520'){
+            navbar.style.display='block'
+         }
+         else
+         {
+            navbar.style.display='none'
+         }
+      window.onresize=function(){
+         if(window.innerWidth>='520'){
+            navbar.style.display='block'
+         }
+         else
+         {
+            navbar.style.display='none'
+         }
+      }
+      var options = {
+  strings: [
+     'Remeber the name IPhone, people themselves advertise which is an advantage for Apple.Inc.', 
+     'It has dominated other phones over past decades, filled with all best features that all users love.',
+     'the best phone of the cetury and will remain same for other decades',
+     'Remeber the name IPhone, people themselves advertise which is an advantage for Apple.Inc.', 
+     'It has dominated other phones over past decades, filled with all best features that all users love.',
+     'the best phone of the cetury and will remain same for other decades.',
+     'Remeber the name IPhone, people themselves advertise which is an advantage for Apple.Inc.', 
+     'It has dominated other phones over past decades, filled with all best features that all users love.',
+     'The best phone of the cetury and will remain same for other decades.',
+     'Remeber the name IPhone, people themselves advertise which is an advantage for Apple.Inc.', 
+     'It has dominated other phones over past decades, filled with all best features that all users love.',
+     'The best phone of the cetury and will remain same for other decades.',
+     'Remeber the name IPhone, people themselves advertise which is an advantage for Apple.Inc.', 
+     'It has dominated other phones over past decades, filled with all best features that all users love.',
+     'the best phone of the cetury and will remain same for other decades.',
+     'Remeber the name IPhone, people themselves advertise which is an advantage for Apple.Inc.', 
+     'It has dominated other phones over past decades, filled with all best features that all users love.',
+     'The best phone of the cetury and will remain same for other decades.',
+   ],
+  typeSpeed: 60,
+  backSpeed:60
+};
+
+var typed = new Typed('.para', options);
+   </script>
+</body>
+</html>
